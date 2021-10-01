@@ -6,5 +6,5 @@
 # Thomas Kaulke, kaulketh@gmail.com
 # https://github.com/kaulketh
 # -----------------------------------------------------------
-from .bot import *
+from .ring_bot import *
 from .singleton import *

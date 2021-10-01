@@ -12,18 +12,18 @@ import time
 from multiprocessing import Process
 
 import telepot
+from telepot.loop import MessageLoop
+
+from bot import singleton
 from config import RING_BOT_TOKEN, RING_RING_GROUP, THK, \
     switch_state, \
     DING_DONG, WELCOME, RUNNING, STOPPED, UNKNOWN_CMD, UNKNOWN_TYPE, \
     RING_BOT_NAME, CMD_START, CMD_STOP, CMD_REBOOT, REBOOT, START, STARTED, \
     STOPPING
-from bot import Singleton
-from telepot.loop import MessageLoop
-
 from logger import LOGGER
 
 
-class RingBot(Singleton):
+class RingBot(singleton.Singleton):
     """ Bot class using telepot framework
         (https://telepot.readthedocs.io),
         Python >= 3
