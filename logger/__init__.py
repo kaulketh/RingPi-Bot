@@ -6,3 +6,6 @@
 # Thomas Kaulke, kaulketh@gmail.com
 # https://github.com/kaulketh
 # -----------------------------------------------------------
+from .logger import get_logger
+
+LOGGER = get_logger()
