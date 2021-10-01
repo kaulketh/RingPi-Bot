@@ -8,4 +8,4 @@
 # -----------------------------------------------------------
 from .constants import *
 from .gpio import *
-from .secret import *
+from .secret import *  # no public deployment
