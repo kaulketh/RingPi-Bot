@@ -29,7 +29,7 @@ class RingBot(Singleton):
         Python >= 3
     """
 
-    def __init__(self, token, admin: list):
+    def __init__(self, token, admin):
         self.__log = LOGGER
         self.__log.debug(f"Initialize instance of {self.__class__.__name__}")
         self.__token = token
